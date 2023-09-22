@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <input #emailcontrol="ngModel" hinvEmailvalidator hinvHover="green" required class="form-control" type="email" name="name" [(ngModel)]="email" placeholder="provide your username">
+    <div>
+        {{emailcontrol.errors|json}}
+    </div>
+    </div>
+    <div class="form-group">
+        <input hinvHover="steelblue" required class="form-control" type="password" name="name" [(ngModel)]="password" placeholder="enter your password">
+   
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary"  (click)="login()">Login</button>
+    </div>
+</form>
